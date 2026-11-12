@@ -1,0 +1,36 @@
+/* 초기화 */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul li {list-style: none;}
+a, a:link, a:visited { text-decoration: none; color: inherit;}
+/* 공통CSS */
+.container { 
+    width: 1140px; 
+    margin: 0 auto;
+}
+/* 헤더CSS */
+header {border: 2px solid blue;}
+header .container{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    background-color: black ;
+    color: white;
+    padding: 20px;
+}
+header h1{font-size:2.5rem; border: 3px solid yellow;}
+header ul{display: flex;}
+header ul li{padding: 10px; font-size: 1.3rem;}
+
+main{height: 100vh; width: 100%; color: white;
+    display: flex; justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main h2{font-size: 3rem;}
+main p{font-size: 1.3rem; width: 50%; margin: 2rem auto;}
+main button{background-color: transparent; color: #fff; padding: 1rem 2rem; border: 3px solid #fff; border-radius: 20px; cursor: pointer;}
