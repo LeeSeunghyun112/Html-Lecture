@@ -1,36 +1,59 @@
 /* 초기화 */
-* {margin: 0; padding: 0; box-sizing: border-box;}
-ul li {list-style: none;}
-a, a:link, a:visited { text-decoration: none; color: inherit;}
-/* 공통CSS */
-.container { 
-    width: 1140px; 
-    margin: 0 auto;
-}
-/* 헤더CSS */
-header {border: 2px solid blue;}
-header .container{
-    width: 100%;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    background-color: black ;
-    color: white;
-    padding: 20px;
-}
-header h1{font-size:2.5rem; border: 3px solid yellow;}
-header ul{display: flex;}
-header ul li{padding: 10px; font-size: 1.3rem;}
-
-main{height: 100vh; width: 100%; color: white;
-    display: flex; justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url(img/back.jpg);
+*{MARGIN:0; PADDING:0; box-sizing:border-box;}
+ul li{list-style:none;}
+a, a:link, a:visited{text-decoration:none; color:inherit;}
+/* 공통css common */
+.container{width:1140px; margin:0 auto;}
+/* 헤더css */
+header{position:fixed; top:0; left:0; width:100%;}
+header{background-image:linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2));}
+header .container{width:100%; padding: 20px; color:#fff; display:flex; justify-content:space-between; align-items:center}
+header h1{font: size 2.5rem;}
+header ul{display:flex;}
+header ul li{padding: 10px;font: size 1.3rem;}
+/* main영역CSS */
+main{width:100%; height:100vh;color: #fff;
+    display:flex; justify-content:center; align-items:center; text-align:center;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(img/main.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-}
+    background-size: cover;}
 main h2{font-size: 3rem;}
-main p{font-size: 1.3rem; width: 50%; margin: 2rem auto;}
-main button{background-color: transparent; color: #fff; padding: 1rem 2rem; border: 3px solid #fff; border-radius: 20px; cursor: pointer;}
+main p{font-size: 1.3rem; width:50%; margin: 2rem auto;}
+main button{background-color: transparent; color:#fff;
+    padding: 1rem 2rem;border: 3px solid #fff; border-radius: 20px;cursor: pointer;
+}
+/* 타이틀 영역CSS */
+section .container .title{margin-bottom: 3rem;}
+section .container .title h4{color: #ed4848; font-size: 2rem;}
+section .container .title h2{font-size: 3rem;}
+section:nth-of-type(2n){background-color: rgb(249,178,178);}
+
+/* 내소개 영역CSS */
+section{height: 2000px; padding: 6rem 0;}
+section .container .about-me{display: flex;}
+section .container .about-me .left{width: 50%;}
+section .container .about-me .left img{width: 100%;}
+section .container .about-me .right{padding: 1.5rem 2.5rem;width: 50%;}
+section .container .about-me .right h3{font-size: 2rem; padding-bottom: 1rem;}
+section .container .about-me .right h3 span{color: #ed4848;}
+section .container .about-me .right p{margin: 0.5rem 0; font-size: 1.2rem;}
+section .container .about-me .right .icon a{font-size: 2rem; margin-right: 1rem;}
+section .container .about-me .right .icon a:nth-child(1){color: #3b8af3}
+section .container .about-me .right .icon a:nth-child(2){color: #f0f}
+section .container .about-me .right .icon a:nth-child(3){color: #fee500}
+section .container .about-me .right .icon a:nth-child(4){color: #f30505}
+
+/* portfolio 영역 */
+#Portfolio .container .port-box{display: flex; justify-content: space-between;}
+#Portfolio .container .port-box .port-inner{border: 1px solid #CCC; width: 30%; padding: 1rem 1rem 2rem 1rem; margin-bottom: 4rem;background-color: #fff;}
+#Portfolio .container .port-box .port-inner img{width: 100%; height: 200px;}
+#Portfolio .container .port-box .port-inner p{color: #ed4848; font-weight: bold; margin: 1rem 0;}
+#Portfolio .container .port-box .port-inner h3{font-size: 1.5rem;}
+/* Features css 영역 */
+#features .container .do-me {display: flex; justify-content: space-between;}
+#features .container .do-me .do-inner {width: 30%; padding: 3rem 2rem; background-color: #EEE; cursor: pointer;}
+#features .container .do-me .do-inner i{font-size: 3rem; color: #ed4848;}
+#features .container .do-me .do-inner h3{font-size: 2rem; margin: 1rem 0;}
+#features .container .do-me .do-inner p{font-size: 1.1rem;}
+#features .container .do-me .do-inner:hover{background-color: coral; color: #fff; i{color: #fff;}}

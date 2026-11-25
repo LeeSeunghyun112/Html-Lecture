@@ -4,31 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>final-이승현</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="main.css"> <!-- main.css 연결 -->
 </head>
 <body>
-    <!--  -->
+    <!-- 헤더영역 -->
     <header>
         <div class="container">
-            <h1><a href="">LSH</a></h1>
+            <h1><a href="">LSH</a></h1>      <!-- 이니셜 -->     
             <nav>
                 <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Feature</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-
         </div>
     </header>
     <!-- 메인영역 -->
-    <main>
+     <main>
         <div class="container">
-            <h2>I'M A Front-End Developer !</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi exercitationem rerum nemo. Quam, earum corrupti? Eaque, fugit! Facere in eos corrupti illo laborum harum sed vel velit suscipit. Praesentium, omnis.</p>
-            <button>DOWNLOAD CV</button> 
+            <h2>I'm a front-end Developer!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Download CV</button>
         </div>
-    </main>
+     </main>
+     <!-- 내소개 영역 -->
+      <section id="about">
+        <div class="container">
+            <div class="title">
+                <h4>Who AM I</h4>
+                <h2>About Me</h2>
+            </div>
+            <div class="about-me">
+                <div class="left">
+                    <img src="img/me.jpg" alt="내 사진">
+                </div>
+                <div class="right">
+                    <h3>Hello, <span>I'M SEUNGHYUN</span>!</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="icon">
+                        <a href="#">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-kakao-talk"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>  
+            </div> <!--about-me end-->
+        </div><!-- container end-->
+      </section> <!-- about me -->
+      <section id="Portfolio">
+        <div class="container">
+            <div class="title">
+                <h4>Portfolio</h4>
+                <h2>PORTFOLIO</h2>
+            </div>
+            <div class="port-box">
+                <div class="port-inner">
+                    <div><img src="img/port1.jpg" alt="포트폴리오 사진"></div>
+                    <p>BRANDING</p>
+                    <h3>WEB DESIGN</h3>        
+                </div> <!-- 1번 inner 박스 -->
+                <div class="port-inner">
+                    <div><img src="img/port2.jpg" alt="포트폴리오 사진"></div>
+                    <p>BRANDING</p>
+                    <h3>WEB DESIGN</h3>        
+                </div> <!-- 2번 inner 박스 -->   
+                <div class="port-inner">
+                    <div><img src="img/port3.jpg" alt="포트폴리오 사진"></div>
+                    <p>BRANDING</p>
+                    <h3>WEB DESIGN</h3>        
+                </div> <!-- 3번 inner 박스 -->           
+            </div> <!-- port box set 1 -->
+            <div class="port-box">
+                <div class="port-inner">
+                    <div><img src="img/port4.jpg" alt="포트폴리오 사진"></div>
+                    <p>BRANDING</p>
+                    <h3>WEB DESIGN</h3>        
+                </div> <!-- 1번 inner 박스 -->
+                <div class="port-inner">
+                    <div><img src="img/port5.jpg" alt="포트폴리오 사진"></div>
+                    <p>BRANDING</p>
+                    <h3>WEB DESIGN</h3>        
+                </div> <!-- 2번 inner 박스 -->   
+                <div class="port-inner">
+                    <div><img src="img/port6.jpg" alt="포트폴리오 사진"></div>
+                    <p>BRANDING</p>
+                    <h3>WEB DESIGN</h3>        
+                </div> <!-- 3번 inner 박스 -->           
+            </div> <!-- port box set 2 -->
+
+
+        </div> <!-- container end -->
+      </section> <!-- about me -->
+      <section id="features">
+        <div class="container">
+           <div class="title">
+                <h4>features</h4>
+                <h2>What I Do</h2>
+            </div> 
+            <div class="do-me">
+                <div class="do-inner">
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, officia quas sint corrupti inventore libero sapiente doloribus odio dolorem nulla enim consequuntur minus expedita beatae voluptates labore eum placeat debitis?</p>
+                    
+                </div>
+                <div class="do-inner">
+                    <div>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, officia quas sint corrupti inventore libero sapiente doloribus odio dolorem nulla enim consequuntur minus expedita beatae voluptates labore eum placeat debitis?</p>
+                    
+                </div>
+                <div class="do-inner">
+                    <div>
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, officia quas sint corrupti inventore libero sapiente doloribus odio dolorem nulla enim consequuntur minus expedita beatae voluptates labore eum placeat debitis?</p>
+                    
+                </div>
+            </div>
+        </div><!-- container end -->
+      </section> <!-- features -->
 </body>
 </html>
